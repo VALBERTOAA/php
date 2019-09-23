@@ -21,13 +21,13 @@ echo '<br>';
 
 switch (session_status()){
     case PHP_SESSION_DISABLED:
-        echo "se as sessıes estiverem desabilitadas.";
+        echo "se as sess√µes estiverem desabilitadas.";
     break;
     case PHP_SESSION_NONE:
-        echo "se as sessıes estiverem habilitadas, mas nenhuma existir.";
+        echo "se as sess√µes estiverem habilitadas, mas nenhuma existir.";
     break;
     case PHP_SESSION_ACTIVE:
-        echo "se as sessıes estiverem habilitadas, e uma existir.";
+        echo "se as sess√µes estiverem habilitadas, e uma existir.";
     break;       
         
 }

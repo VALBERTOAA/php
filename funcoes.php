@@ -22,7 +22,11 @@ function msg(){
     return $argumentos;
 }
 
-
+//Passagem de valor por referencia 
+//& indica que será  alterado o valor da variavel passada no parametro
+function somaCem(&$a) {
+    $a += 100;
+}
 
 echo ola();
 
@@ -51,6 +55,39 @@ echo var_dump(msg("Testando argumentos"));
 echo '<br>';
 
 echo var_dump(msg("Testando argumentos"," com mais parametros"));
+
+echo '<br>';
+
+$a=100;
+
+echo "Valor de a: $a";
+
+echo '<br>';
+
+somaCem($a);
+
+echo "Valor de a: $a";
+
+echo '<br>';
+
+
+$pessoa = array(
+    'nome'=>"Valberto",
+    'idade'=>42
+);
+
+foreach ($pessoa as &$value) {
+    //Altera o valor da idade por causa do & passagem por referencia;
+    if (gettype($value) === 'integer')
+        $value += 10;
+    
+    echo $value."<br>";
+    
+}
+
+var_dump($pessoa);
+
+echo '<br>';
 
 
 

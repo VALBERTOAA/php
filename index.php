@@ -9,11 +9,11 @@ $_SESSION['nome']='Treinamento PHP';
 
 if (isset($_SESSION['nome'])){
     
-    echo "Sess„o de p·gina: ".$_SESSION['nome'];   
+    echo "Sess√£o de p√°gina: ".$_SESSION['nome'];   
     
 }else
 {
-    echo "Sess„o de p·gina: "."VAZIA";
+    echo "Sess√£o de p√°gina: "."VAZIA";
 }
 
 
@@ -30,6 +30,9 @@ $constante = "constante.php";
 $session = "session.php";
 $limpasession = "limpasession.php";
 $funcoes = "funcoes.php";
+$estruturas = "estruturas.php";
+$datahora = "datahora.php";
+$usandopoo = "usandopoo.php";
 
 
 echo "<a href=".$variaveis.">".$variaveis."</a></br>";
@@ -42,5 +45,8 @@ echo "<a href=".$constante.">".$constante."</a></br>";
 echo "<a href=".$session.">".$session."</a></br>";
 echo "<a href=".$limpasession.">".$limpasession."</a></br>";
 echo "<a href=".$funcoes.">".$funcoes."</a></br>";
+echo "<a href=".$estruturas.">".$estruturas."</a></br>";
+echo "<a href=".$datahora.">".$datahora."</a></br>";
+echo "<a href=".$usandopoo.">".$usandopoo."</a></br>";
 
 ?>
